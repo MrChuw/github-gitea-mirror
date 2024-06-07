@@ -786,3 +786,5 @@ ASALocalRun/
 .all-contributorsrc
 .github/
 src/config.json
+!/cache/
+!/mirrorLogs/
