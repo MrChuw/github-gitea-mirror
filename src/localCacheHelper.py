@@ -1,31 +1,39 @@
 #!/usr/bin/env python
-
-giteaExistsRepos = dict()
-
-from helper import logError,log,getConfig
 import json
 
-config = getConfig()
+from loguru import logger
 
-def writeLocalCache(content):
+from src.helper import get_config
+
+config = get_config()
+
+
+def write_local_cache(content):
     try:
-        with open(config['local_cache']['file_path'], 'w') as file:
+        with open(config['local_cache']['path'], 'w') as file:
             file.write(json.dumps(content, indent=4, sort_keys=True))
-    except:
-        logError('Unable To Save Local Cache !')
+    except Exception as e:
+        logger.error('################# ERROR ####################')
+        logger.error('Unable To Save Local Cache !', e)
+        logger.error('################# ERROR ####################')
 
-def readLocalCache():
+
+def read_local_cache():
     try:
-        with open(config['local_cache']['file_path'],'r') as file:
+        with open(config['local_cache']['path'], 'r') as file:
             filedata = file.read()
             return json.loads(filedata)
-    except:
-        logError('Local Cache File Not Found !  / Unable To Ready It')
+    except Exception as e:
+        logger.error('################# ERROR ####################')
+        logger.error('Local Cache File Not Found !  / Unable To Ready It', e)
+        logger.error('################# ERROR ####################')
 
     return dict()
 
-giteaExistsRepos = readLocalCache()
+
+giteaExistsRepos = read_local_cache()
 useLocalCache = config['local_cache']['enabled']
 
-def saveLocalCache():
-    writeLocalCache(giteaExistsRepos)
+
+def save_local_cache():
+    write_local_cache(giteaExistsRepos)
