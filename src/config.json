@@ -1,23 +1,23 @@
 {
-  "github"           : {
-	"username"    : "",
-	"accesstoken" : ""
+  "github": {
+    "username": "",
+    "accesstoken": ""
   },
-  "gitea"            : {
-	"host"                 : "",
-	"accesstoken"          : "",
-	"username"             : "",
-	"default_userpassword" : "RY7VpBD62P7964c4c3e2c8e$mSz%2GAM82hv68yUbHc4@Gdw8c%f^W3*qd4c3e2c8ef*8a6b^rKy",
-	"gist"                 : {
-	  "prefix" : "gist",
-	  "surfix" : ""
-	}
+  "gitea": {
+    "host": "",
+    "accesstoken": "",
+    "username": "",
+    "default_userpassword": "RY7VpBD62P7964c4c3e2c8e$mSz%2GAM82hv68yUbHc4@Gdw8c%f^W3*qd4c3e2c8ef*8a6b^rKy",
+    "gist": {
+      "prefix": "gist",
+      "surfix": ""
+    }
   },
-  "repomap"          : { },
-  "blacklist"        : [ ],
-  "gistsSource"      : true,
-  "gistsStared"      : true,
-  "repositoryStared" : true,
-  "repositorySource" : true,
-  "repositoryForked" : true
+  "repomap": {},
+  "blacklist": [],
+  "gistsSource": true,
+  "gistsStared": true,
+  "repositoryStared": true,
+  "repositorySource": true,
+  "repositoryForked": true
 }
