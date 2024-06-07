@@ -785,4 +785,4 @@ ASALocalRun/
 
 .all-contributorsrc
 .github/
-*.config.json
+src/config.json
