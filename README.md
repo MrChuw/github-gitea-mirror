@@ -12,6 +12,7 @@ I am not migrating away from GitHub because I see no reason to: the platform is 
 ## ✅  Requirements
 1. Python3 -- `sudo apt-get install python3`
 2. [PyGithub](https://github.com/PyGithub/PyGithub) -- `pip install PyGithub`
+3. [loguru](https://github.com/Delgan/loguru) -- `pip install loguru`
 
 ## ⚙️Installation
 
@@ -34,15 +35,15 @@ Or you can download the source code and install it where ever you need
 | Option | Description |
 | --- | --- |
 | `github.username` | Your Github Username |
-| `github.accesstoken` | Your Github Account's Personal Access Token |
+| `github.access-token` | Your Github Account's Personal Access Token |
 | - | - |
 | `gitea.host` | Selfhosted Gitea URL without `/` at the end |
-| `gitea.accesstoken` | Your Personal Access Token |
+| `gitea.access-token` | Your Personal Access Token |
 | `gitea.username` | Account User Name |
 | `gitea.gist.prefix` | Custom Prefix For Repository When Mirroring Gists |
-| `gitea.gist.surfix` | Custom Prefix For Repository When Mirroring Gists |
+| `gitea.gist.suffix` | Custom Prefix For Repository When Mirroring Gists |
 | - | - |
-| `repomap` | Remap A Repository To Diff User |
+| `repo_map` | Remap A Repository To Diff User |
 | `blacklist` | A list of glob-expression on github full repository names to skip |
 | `gistsSource` | set to true to mirror all Gists Created By You|
 | `gistsStared` | set to true to mirror all Gists Stared By You|
