@@ -787,3 +787,4 @@ ASALocalRun/
 src/config.json
 !/cache/
 !/mirrorLogs/
+!/cache/gitmirror.json
